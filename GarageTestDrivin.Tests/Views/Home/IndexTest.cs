@@ -49,6 +49,8 @@ namespace GarageTestDrivin.Tests.Views.Home
 
 
             var SubmittButton = By.jQuery("input[value='Create'][type='submit']");
+
+            Assert.AreEqual(1, 1);
         }
     }
 }
