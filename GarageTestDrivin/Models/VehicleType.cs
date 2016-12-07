@@ -11,6 +11,7 @@ namespace GarageTestDrivin.Models
         [Key]
         public int Id { get; set; }
 
+        [Display(Name = "Type")]
         public string Name { get; set; }
 
         public virtual List<Vehicle> Vehicles { get; set; }

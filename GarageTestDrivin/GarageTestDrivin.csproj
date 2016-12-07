@@ -134,6 +134,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\GarageRepository.cs" />
     <Compile Include="Repository\GRepo.cs" />
+    <Compile Include="ViewModels\CreateModel.cs" />
+    <Compile Include="ViewModels\DeleteModel.cs" />
+    <Compile Include="ViewModels\DetailsModel.cs" />
+    <Compile Include="ViewModels\EditModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\GarageDB.mdf" />

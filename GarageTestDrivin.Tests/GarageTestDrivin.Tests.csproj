@@ -128,7 +128,6 @@
     <Compile Include="BrowserHost.cs" />
     <Compile Include="DataAccessLayer\TestOwnerDbSet.cs" />
     <Compile Include="DataAccessLayer\TestVehicleTypeDbSet.cs" />
-    <Compile Include="Models\CreateModel.cs" />
     <Compile Include="Repository\GRepoTest.cs" />
     <Compile Include="DataAccessLayer\TestDbSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,8 +136,11 @@
     <Compile Include="DataAccessLayer\TestVehicleDbSet.cs" />
     <Compile Include="ObjectCreator.cs" />
     <Compile Include="Views\Home\CreatePage.cs" />
+    <Compile Include="Views\Home\DeletePage.cs" />
+    <Compile Include="Views\Home\DetailsPage.cs" />
+    <Compile Include="Views\Home\EditPage.cs" />
     <Compile Include="Views\Home\IndexPage.cs" />
-    <Compile Include="Views\Home\IndexTest.cs" />
+    <Compile Include="Views\Home\HomeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
