@@ -17,6 +17,7 @@ namespace GarageTestDrivin.Tests
             Instance.Run("GarageTestDrivin", 4223,
                             configure => configure
                             .WithRemoteWebDriver(BrowserFactory.Chrome)
+                            .WithRouteConfig(RouteConfig.RegisterRoutes) // To allow us to navigate by selecting a controller and action rather than a url string
                         );
 
             RootUrl = Instance.Application.Browser.Url;

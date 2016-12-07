@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using GarageTestDrivin.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace GarageTestDrivin.Tests.Views.Home
             // Assert
             // Table contains proper header and needed buttons for functionality
             Assert.IsTrue(Table.Contains("Name Name Color RegNr") && Table.Contains("Edit") && Table.Contains("Details") && Table.Contains("Delete"));
-
+            
 
         }
 
@@ -32,6 +33,8 @@ namespace GarageTestDrivin.Tests.Views.Home
         {
             var Browser = BrowserHost.Instance.Application.Browser;
             Browser.Navigate().GoToUrl(BrowserHost.RootUrl + @"Home/Index");
+
+            BrowserHost.Instance.NavigateToInitialPage<HomeController, CreatePage>(x => x.Index())
 
             var CreateButton = Browser.FindElement(By.LinkText("Create New"));
             CreateButton.Click();
